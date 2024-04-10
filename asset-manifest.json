@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reklamowe24/static/css/main.e1c1de5d.css",
-    "main.js": "/reklamowe24/static/js/main.84ce3200.js",
+    "main.js": "/reklamowe24/static/js/main.05717348.js",
     "static/js/453.c59d7500.chunk.js": "/reklamowe24/static/js/453.c59d7500.chunk.js",
     "static/media/bags.jpeg": "/reklamowe24/static/media/bags.3791e821673f09e18ce0.jpeg",
     "static/media/pens.jpeg": "/reklamowe24/static/media/pens.643672bb1cc3b4dea28c.jpeg",
@@ -14,11 +14,11 @@
     "static/media/arrow_next.svg": "/reklamowe24/static/media/arrow_next.96375962e6f68057582f2da2dea1b705.svg",
     "static/media/arrow_up.svg": "/reklamowe24/static/media/arrow_up.f5c66a289afb737acf60e5b0709f02d6.svg",
     "main.e1c1de5d.css.map": "/reklamowe24/static/css/main.e1c1de5d.css.map",
-    "main.84ce3200.js.map": "/reklamowe24/static/js/main.84ce3200.js.map",
+    "main.05717348.js.map": "/reklamowe24/static/js/main.05717348.js.map",
     "453.c59d7500.chunk.js.map": "/reklamowe24/static/js/453.c59d7500.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1c1de5d.css",
-    "static/js/main.84ce3200.js"
+    "static/js/main.05717348.js"
   ]
 }
