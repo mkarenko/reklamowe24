@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'Boska';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(../../public/fonts/Boska-Variable.ttf) format('truetype');
+	src: url(../../public/fonts/Boska-VariableItalic.ttf) format('truetype');
+}

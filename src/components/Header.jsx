@@ -1,18 +1,17 @@
 import React, {useState} from 'react';
 
-import logo from '../assets/logo.png';
-import mail from '../assets/mail.svg';
-import phone from '../assets/phone.svg';
+import logo from '../assets/logos/logo.png';
+import mail from '../assets/icons/mail.svg';
+import phone from '../assets/icons/phone.svg';
+import {handleRefreshSite} from '../utils/common';
 
 const Header = () => {
 	const [showMail, setShowMail] = useState(false);
 	const [showPhone, setShowPhone] = useState(false);
 
-	const handleRefreshSite = () => window.location.reload();
-
 	return (
-		<div className='w-screen flex border-b-[1px] py-5 px-[90px]'>
-			<header className='w-screen flex justify-between'>
+		<div className='flex border-b-[1px] py-5 px-[90px]'>
+			<header className='w-full flex justify-between'>
 				<button id='logoButton' type='button' onClick={handleRefreshSite}>
 					<img alt='logo' src={logo} className='w-[175px] h-[55px]' />
 				</button>

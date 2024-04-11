@@ -8,12 +8,8 @@ const CategoryCarousel = () => {
 	const endIndex = Math.min(startIndex + 11, categories.length);
 	const categoriesToDisplay = categories.slice(startIndex, endIndex);
 
-	console.log(currentPage);
-	console.log(endIndex);
-
 	return (
-		<div className='w-screen flex-col px-[90px] py-4'>
-			<div className='relative mb-3 text-[40px] text-font font-[400]'>Kategorie</div>
+		<div className='w-full flex-col py-4'>
 			<div
 				className='overflow-hidden rounded-3xl flex justify-between'
 				style={{

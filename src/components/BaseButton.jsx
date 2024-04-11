@@ -15,11 +15,11 @@ const BaseButton = forwardRef(
 					ref={ref}
 					className='h-full w-full'
 					style={{
-						borderRadius: '9999px', // shape='round' equivalent for IonButton
-						backgroundColor: fill === 'clear' ? 'transparent' : 'blue', // Adjust as needed
-						color: fill === 'clear' ? 'blue' : 'white', // Adjust as needed
-						border: fill === 'outline' ? '2px solid blue' : 'none', // Adjust as needed
-						padding: '0.5rem 1rem', // Adjust as needed
+						borderRadius: '9999px',
+						backgroundColor: fill === 'clear' ? 'transparent' : 'blue',
+						color: fill === 'clear' ? 'blue' : 'white',
+						border: fill === 'outline' ? '2px solid blue' : 'none',
+						padding: '0.5rem 1rem',
 					}}
 				>
 					<div className={`flex ${flexDirection} items-center justify-center`}>

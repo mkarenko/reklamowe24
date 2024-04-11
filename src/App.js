@@ -1,15 +1,15 @@
 import React from 'react';
 import {Route, Routes} from 'react-router-dom';
 
-import NotFoundPage from './pages/NotFoundPage';
-import MainPage from './pages/MainPage';
+import HomePage from './pages/HomePage';
+import NoContentPage from './pages/NoContentPage';
 
 const App = () => {
 	return (
 		<Routes>
-			<Route path='*' element={<NotFoundPage />} />
+			<Route path='/404' element={<NoContentPage />} />
 
-			<Route path='/' element={<MainPage />} />
+			<Route path='/' element={<HomePage />} />
 		</Routes>
 	);
 };

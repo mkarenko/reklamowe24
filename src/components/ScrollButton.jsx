@@ -1,5 +1,6 @@
-import arrowUp from '../assets/arrow_up.svg';
 import {useState} from 'react';
+
+import arrowUp from '../assets/icons/arrow_up.svg';
 
 const ScrollButton = () => {
 	const [showButton, setShowButton] = useState(false);

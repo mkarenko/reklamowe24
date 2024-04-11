@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 
-import {Divider} from './Divider';
+import Divider from './Divider';
 
-import logo from '../assets/logo_white.png';
-import send from '../assets/send.svg';
+import logo from '../assets/logos/logo_white.png';
 
-const firstCol = [
+const orders = [
 	{id: 0, name: 'Najczęściej zadawane pytania'},
 	{id: 1, name: 'Czas realizacji'},
 	{id: 2, name: 'Znakowanie'},
@@ -16,7 +15,7 @@ const firstCol = [
 	{id: 7, name: 'Polityka prywatności'},
 ];
 
-const secondCol = [
+const informations = [
 	{id: 0, name: 'Aktualnośic'},
 	{id: 1, name: 'Kontakt'},
 	{id: 2, name: 'O nas'},
@@ -35,39 +34,49 @@ const Footer = () => {
 	const [showPhone2, setShowPhone2] = useState(false);
 
 	return (
-		<footer className='flex flex-col justify-center items-center bg-[#000000] text-white space-y-10'>
+		<footer className='flex flex-col justify-center items-center bg-[#000] text-white space-y-10'>
 			<div className='p-10 flex justify-center text-[40px]'>
-				Zapisz się do <a className='font-serif'>&nbsp;newsletters</a>
+				Zapisz się do <span className='font-boska font-[900]'>&nbsp;newsletters</span>
 			</div>
 			<div className='w-[600px]'>
 				<div className='w-full flex justify-center'>
 					<input
 						type='email'
 						placeholder='Wpisz swój adres e-mail'
-						className='w-full px-3 py-2 text-[20px] text-white bg-transparent focus:bg-none focus:ring-0 border-none'
+						className='w-full px-3 py-2 text-[20px] placeholder:text-darkGray text-white bg-transparent'
 					/>
-					<button className='bg-white' onClick={() => void ''}>
-						<img alt='arrowNext' src={send} className='w-20 h-20 bg-black text-white' />
+					{/* Submit button */}
+					<button className=''>
+						<svg
+							width='49'
+							height='33'
+							viewBox='0 0 49 33'
+							fill='none'
+							xmlns='http://www.w3.org/2000/svg'
+						>
+							<path d='M0.5 16.5H43.5' stroke='white' stroke-width='5'></path>
+							<path d='M30 2L44.5 16.5L30 31' stroke='white' stroke-width='5'></path>
+						</svg>
 					</button>
 				</div>
-				<Divider />
+				<Divider color='bg-white' height='h-0.5' />
 			</div>
 			<div className='w-2/3 flex justify-start space-x-24'>
 				<div className='w-1/4 flex flex-col'>
 					<div className='text-[15px] text-darkGray'>ZAMÓWIENIA</div>
-					{firstCol.map((col) => (
-						<div key={col.id} className='flex justify-start items-center space-x-2 space-y-4'>
+					{orders.map((x) => (
+						<div key={x.id} className='flex justify-start items-center space-x-2 space-y-4'>
 							<div className='rounded-full h-1 w-1 mt-4 bg-white' />
-							<button className='text-xl'>{col.name}</button>
+							<button className='text-xl'>{x.name}</button>
 						</div>
 					))}
 				</div>
 				<div className='w-1/4 flex flex-col'>
 					<div className='text-[15px] text-darkGray'>INFORMACJE</div>
-					{secondCol.map((col) => (
-						<div key={col.id} className='flex justify-start items-center space-x-2 space-y-4'>
+					{informations.map((y) => (
+						<div key={y.id} className='flex justify-start items-center space-x-2 space-y-4'>
 							<div className='rounded-full h-1 w-1 mt-4 bg-white' />
-							<button className='text-xl'>{col.name}</button>
+							<button className='text-xl'>{y.name}</button>
 						</div>
 					))}
 				</div>
@@ -144,28 +153,28 @@ const Footer = () => {
 						<a href='https://www.facebook.com/reklamowe24/'>
 							<img
 								alt='fb'
-								src={require('../assets/facebook.png')}
+								src={require('../assets/logos/facebook.png')}
 								className='hover:cursor-pointer h-8'
 							/>
 						</a>
 						<a href='https://www.instagram.com/reklamowe24/'>
 							<img
 								alt='ig'
-								src={require('../assets/instagram.png')}
+								src={require('../assets/logos/instagram.png')}
 								className='hover:cursor-pointer h-8'
 							/>
 						</a>
 						<a href='https://www.youtube.com/channel/UCVJG9Mu8MwBwRJsOks5a1nA'>
 							<img
 								alt='yt'
-								src={require('../assets/youtube.png')}
+								src={require('../assets/logos/youtube.png')}
 								className='hover:cursor-pointer h-8'
 							/>
 						</a>
 						<a href='https://www.linkedin.com/company/reklamowe24/'>
 							<img
 								alt='in'
-								src={require('../assets/linkedin.png')}
+								src={require('../assets/logos/linkedin.png')}
 								className='hover:cursor-pointer h-8'
 							/>
 						</a>

@@ -1,10 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
-const carouselImages = [
-	{id: 0, name: 'Artykuły piśmiennicze', img: require('../assets/pens.jpeg')},
-	{id: 1, name: 'Koszulki z nadrukiem', img: require('../assets/tshirts.jpeg')},
-	{id: 2, name: 'Torby reklamowe', img: require('../assets/bags.jpeg')},
-];
+import {carouselImages} from '../db/carouselImages';
+import {navigateTo404} from '../utils/common';
 
 const ImageCarousel = () => {
 	const [currentIndex, setCurrentIndex] = useState(1);
@@ -24,15 +21,20 @@ const ImageCarousel = () => {
 	};
 
 	return (
-		<div className='w-screen flex-col px-[90px] py-4'>
+		<div className='w-full flex-col py-4'>
 			<div className='relative overflow-hidden rounded-3xl'>
 				<div
 					style={{transform: `translateX(-${currentIndex * 100}%)`}}
-					className='flex  transition-transform duration-500 ease-in-out'
+					className='flex transition-transform duration-500 ease-in-out'
 				>
 					{carouselImages.map((item) => (
 						<div key={item.id} className='w-full flex-shrink-0 flex justify-center'>
-							<img src={item.img} alt={item.name} className='hover:cursor-pointer rounded-3xl' />
+							<img
+								src={item.img}
+								alt={item.name}
+								className='hover:cursor-pointer rounded-3xl'
+								onClick={navigateTo404}
+							/>
 						</div>
 					))}
 				</div>
