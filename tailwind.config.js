@@ -18,6 +18,7 @@ module.exports = {
 				darkGray: '#878787',
 				lightGray: '#DFDFDF',
 				font: '#212529',
+				customBlue: '#0d6efd',
 			},
 		},
 	},

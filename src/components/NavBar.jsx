@@ -1,16 +1,33 @@
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 
+import {offers} from '../db/offers';
+import SearchModal from './SearchModal';
+import CategoryModal from './CategoryModal';
+
+import {arrowDown, searchCircle} from 'ionicons/icons';
 import lock from '../assets/icons/lock.png';
 import cart from '../assets/icons/cart.png';
-import arrowNext from '../assets/icons/arrow_next.svg';
-import {arrowDown, searchCircle} from 'ionicons/icons';
-import {offers} from '../db/offers';
 
 const NavBar = () => {
 	const modalRef = useRef();
-	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
+	const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
 	const [selectedCategory, setSelectedCategory] = useState(null);
 	const [selectedSubcategories, setSelectedSubcategories] = useState([]);
+
+	useEffect(() => {
+		document.addEventListener('keyup', handleKeyUp);
+
+		return () => {
+			document.removeEventListener('keyup', handleKeyUp);
+		};
+	}, []);
+
+	const handleKeyUp = (event) => {
+		if (event.keyCode === 27) {
+			closeModal();
+		}
+	};
 
 	const handleCloseModal = (event) => {
 		if (modalRef.current === event.target) {
@@ -18,18 +35,27 @@ const NavBar = () => {
 		}
 	};
 
-	const openModal = () => {
-		setIsModalOpen(true);
+	const openCategoryModal = () => {
+		setIsCategoryModalOpen(true);
+	};
+
+	const openSearchModal = () => {
+		setIsSearchModalOpen(true);
 	};
 
 	const closeModal = () => {
-		setIsModalOpen(false);
+		setIsCategoryModalOpen(false);
+		setIsSearchModalOpen(false);
 	};
 
 	const handleCategoryClick = (category) => {
 		setSelectedCategory(category);
 		setSelectedSubcategories(category.subcategories);
-		openModal();
+		openCategoryModal();
+	};
+
+	const handleSearchButtonClick = () => {
+		openSearchModal();
 	};
 
 	return (
@@ -45,7 +71,11 @@ const NavBar = () => {
 						</div>
 					))}
 					<div className='text-xl font-semibold underline hover:cursor-pointer'>Kontakt</div>
-					<button className='w-[240px] border-[1px] border-gray-300 rounded-full hover:cursor-pointer'>
+
+					<button
+						className='w-[240px] border-[1px] border-gray-300 rounded-full hover:cursor-pointer'
+						onClick={handleSearchButtonClick}
+					>
 						<div className='flex justify-between items-center'>
 							<div className='ml-4 text-darkGray'>Szukaj produktu</div>
 							<img alt='search' src={searchCircle} className='w-14' />
@@ -63,21 +93,22 @@ const NavBar = () => {
 				</div>
 			</nav>
 
-			{isModalOpen && (
-				<div
-					ref={modalRef}
-					className='sticky top-10 flex items-center justify-center bg-[f9f9f9]'
-					onClick={handleCloseModal}
-				>
-					<div className='flex flex-col items-start justify-between p-3 bg-white rounded-xl shadow-lg border-[1px]'>
-						{selectedSubcategories.map((subcategory, index) => (
-							<div className='w-auto flex justify-between'>
-								<div key={index}>{subcategory}</div>
-								{selectedCategory.id === 1 && <img alt='arrow_next' src={arrowNext} />}
-							</div>
-						))}
-					</div>
-				</div>
+			{isCategoryModalOpen && (
+				<CategoryModal
+					modalRef={modalRef}
+					selectedCategory={selectedCategory}
+					selectedSubcategories={selectedSubcategories}
+					closeModal={closeModal}
+					handleCloseModal={handleCloseModal}
+				/>
+			)}
+
+			{isSearchModalOpen && (
+				<SearchModal
+					modalRef={modalRef}
+					closeModal={closeModal}
+					handleCloseModal={handleCloseModal}
+				/>
 			)}
 		</React.Fragment>
 	);
