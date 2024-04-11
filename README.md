@@ -28,6 +28,7 @@ Projekt React'owy stworzony przy użyciu takich bibliotek jak:
 # Summary
 
 Date : 2024-04-11 19:04:16
+
 Total : 48 files, 19975 codes, 206 comments, 222 blanks, all 20403 lines
 
 ## Languages
