@@ -34,7 +34,7 @@ const NavBar = () => {
 
 	return (
 		<React.Fragment>
-			<nav className='w-full flex justify-between items-center sticky top-0 z-20 py-5 px-[90px] border-b-[1px] bg-white'>
+			<nav className='w-full flex justify-between items-center sticky top-0 z-20 py-2 px-[90px] border-b-[1px] bg-white'>
 				<div className='flex items-center space-x-8'>
 					{offers.map((category) => (
 						<div key={category.id} className='flex relative hover:cursor-pointer'>

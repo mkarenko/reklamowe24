@@ -20,6 +20,7 @@ Projekt React'owy stworzony przy użyciu takich bibliotek jak:
   - node.js
   - git
   - yarn
+  - dowolne ide
 - ściągnąć repozytorium
 - ściągnąc oraz zainstalować brakujące biblioteki komendą **yarn install**
-- ruchomić projekt komendą **yarn start**
+- uruchomić projekt komendą **yarn start**
