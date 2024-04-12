@@ -51,7 +51,10 @@ const SearchModal = ({modalRef, handleCloseModal}) => {
 			});
 			inputRef.current.blur();
 		} else if (event.key === 'Enter') {
-			setValue(searchCategories.name);
+			event.preventDefault();
+			if (selectedIndex !== null) {
+				setValue(searchCategories[selectedIndex].name);
+			}
 		}
 	};
 
@@ -67,6 +70,7 @@ const SearchModal = ({modalRef, handleCloseModal}) => {
 					<input
 						id='inputId'
 						ref={inputRef}
+						value={value}
 						placeholder='Szukaj produktu'
 						className='h-10 border border-lightGray rounded-lg py-2 px-4 mb-4'
 						onChange={(e) => setValue(e.target.value)}
@@ -80,13 +84,13 @@ const SearchModal = ({modalRef, handleCloseModal}) => {
 									ref={(ref) => (categoriesRef.current[index] = ref)}
 									className={`flex flex-col justify-center items-start border-x border-b p-3
                                     border-lightGray hover:cursor-pointer hover:bg-lightGray
-                                    ${index == searchCategories.length - 1 && 'rounded-b-lg'}
+                                    ${index === searchCategories.length - 1 && 'rounded-b-lg'}
                                     ${index === 0 && 'border-t-[1px] rounded-t-lg'}
                                     ${selectedIndex === index && 'bg-customBlue'}`}
 								>
 									<div className='text-[12px]'>Popularne</div>
 									<div className='flex space-x-1'>
-										<img alt='trending' src={trending} />
+										<img alt='trending' src={trending} className='w-5' />
 										<strong>{c.name}</strong>
 									</div>
 								</div>
@@ -98,8 +102,8 @@ const SearchModal = ({modalRef, handleCloseModal}) => {
 						<div className='flex flex-col justify-center items-start border-x border-b p-3 border-lightGray hover:cursor-pointer hover:bg-lightGray'>
 							<div className='text-[12px]'>Kliknij aby wyszukać</div>
 							<div className='flex space-x-1'>
-								<img alt='sparkles' src={sparkles} />
-								<strong>{value}</strong>
+								<img alt='sparkles' src={sparkles} className='w-5' />
+								<strong className='flex-shrink-0'>{value}</strong>
 							</div>
 						</div>
 					)}

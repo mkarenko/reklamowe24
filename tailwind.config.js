@@ -5,10 +5,10 @@ module.exports = {
 	theme: {
 		fontFamily: {boska: ['Boska', 'sans-serif']},
 		screens: {
-			sm: '480px',
-			md: '768px',
-			lg: '976px',
-			xl: '1440px',
+			sm: {max: '767px'},
+			md: {min: '768px', max: '992px'},
+			lg: {min: '993px', max: '1199px'},
+			xl: {min: '1200px'},
 		},
 		extend: {
 			colors: {

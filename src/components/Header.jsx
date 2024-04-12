@@ -1,21 +1,33 @@
 import React, {useState} from 'react';
 
+import {handleRefreshSite} from '../utils/common';
+import BurgerMenu from './BurgerMenu';
+import BaseButton from './BaseButton';
+
+import lock from '../assets/icons/lock.png';
+import cart from '../assets/icons/cart.png';
 import logo from '../assets/logos/logo.png';
 import mail from '../assets/icons/mail.svg';
 import phone from '../assets/icons/phone.svg';
-import {handleRefreshSite} from '../utils/common';
+import Divider from './Divider';
 
 const Header = () => {
 	const [showMail, setShowMail] = useState(false);
 	const [showPhone, setShowPhone] = useState(false);
 
 	return (
-		<div className='flex border-b-[1px] py-5 px-[90px]'>
-			<header className='w-full flex justify-between'>
+		<div className='px-2 lg:px-4 xl:px-[90px] py-5 h-[90px] flex justify-between items-center border-b-[1px]'>
+			<BurgerMenu />
+
+			<header className='w-full flex justify-between items-center'>
 				<button id='logoButton' type='button' onClick={handleRefreshSite}>
-					<img alt='logo' src={logo} className='w-[175px] h-[55px]' />
+					<img
+						alt='logo'
+						src={logo}
+						className='w-[175px] h-[55px] sm:max-w-[107px] sm:max-h-[36px]'
+					/>
 				</button>
-				<div className='flex gap-3 mr-6'>
+				<div className='flex gap-3 sm:hidden md:hidden lg:hidden'>
 					<div className='flex justify-center items-center gap-1 cursor-pointer'>
 						<img alt='mail' src={mail} />
 						{!showMail && <div>biuro@ </div>}
@@ -54,6 +66,12 @@ const Header = () => {
 							</button>
 						)}
 					</div>
+				</div>
+
+				<div className='xl:hidden w-20 flex items-center'>
+					<BaseButton icon={lock} iconClassName='flex w-4' />
+					<Divider isRotated width='90px' />
+					<BaseButton icon={cart} iconClassName='flex w-7' />
 				</div>
 			</header>
 		</div>

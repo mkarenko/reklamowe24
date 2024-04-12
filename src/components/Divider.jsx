@@ -1,17 +1,13 @@
 import React from 'react';
 
-const Divider = ({width, height, color, margin, padding, opacity}) => (
+const Divider = ({width, height, color, opacity, isRotated}) => (
 	<div
 		style={{
-			flex: 'flex',
-			justifyItems: 'justify-center',
-			alignItems: 'items-center',
 			width: width,
 			height: height,
 			backgroundColor: color,
-			margin: margin,
-			padding: padding,
 			opacity: opacity,
+			transform: isRotated ? 'rotate(90deg)' : 'none',
 		}}
 	/>
 );
@@ -19,9 +15,9 @@ const Divider = ({width, height, color, margin, padding, opacity}) => (
 Divider.defaultProps = {
 	width: '100%',
 	height: '1px',
-	color: '#BBB',
+	color: '#DFDFDF',
 	margin: '0 auto',
-	// padding: '0px 0px 0px 0px',
+	padding: '0 auto',
 	opacity: '100%',
 };
 

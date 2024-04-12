@@ -5,7 +5,7 @@ import star from '../assets/icons/star.svg';
 
 const BaseReview = ({name, img, date, desc}) => {
 	return (
-		<div className='flex flex-col justify-start rounded-3xl bg-[#F4F4F4] p-4 pb-8'>
+		<div className='max-w-[300px] flex flex-col justify-start rounded-3xl bg-[#F4F4F4] p-4 pb-8'>
 			<div className='flex justify-between'>
 				<div className='flex items-center gap-3'>
 					<img alt={img} src={img} className='w-9 h-9' />
@@ -18,7 +18,7 @@ const BaseReview = ({name, img, date, desc}) => {
 			</div>
 			<div className='flex space-x-0.5'>
 				{Array.from({length: 5}).map((_, index) => (
-					<img alt='start' src={star} className='w-[22px] h-[31px]' />
+					<img key={index} alt='start' src={star} className='w-[22px] h-[31px]' />
 				))}
 			</div>
 

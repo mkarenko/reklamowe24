@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 
 const BaseCarousel = ({header, list, itemsPerPage, timeInterval, showControls}) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
-	const [intervalTime, setIntervalTime] = useState(timeInterval || 5000);
 	const [, setCurrentPage] = useState(1);
 
+	const intervalTime = 5000;
 	const startIndex = currentIndex;
 	const endIndex = Math.min(startIndex + itemsPerPage, list.length);
 	const listToDisplay = list.slice(startIndex, endIndex);
@@ -15,12 +15,8 @@ const BaseCarousel = ({header, list, itemsPerPage, timeInterval, showControls}) 
 		}, intervalTime);
 
 		return () => clearInterval(intervalId);
+		// eslint-disable-next-line
 	}, [currentIndex, intervalTime]);
-
-	const handleChangeImage = (id) => {
-		setCurrentIndex(id);
-		setIntervalTime(5000);
-	};
 
 	const handleControlClick = (index) => {
 		if (showControls) {

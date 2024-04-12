@@ -11,19 +11,18 @@ import BaseCarousel from '../components/BaseCarousel';
 import BaseReview from '../components/BaseReview';
 import {BaseHeader} from '../components/BaseHeader';
 import BaseContainer from '../components/BaseContainer';
-
+import BaseGadget from '../components/BaseGadget';
 import {companies} from '../db/companies';
 import {brands} from '../db/brands';
 import {reviews} from '../db/reviews';
 import {gadgets} from '../db/gadgets';
-import BaseGadget from '../components/BaseGadget';
 
 const HomePage = () => (
 	<>
 		<Header />
 		<NavBar />
 
-		<div className='lg:mx-[90px] sm:mx-[10px]'>
+		<div className='px-2 lg:px-4 xl:px-[90px] flex flex-col mx-auto justify-center items-start'>
 			{/* Image Carousel */}
 			<ImageCarousel />
 			<Divider color='#DFDFDF' opacity='25%' />
@@ -38,15 +37,15 @@ const HomePage = () => (
 
 			{/* PremiumBrands */}
 			<BaseHeader name='Nasze marki' cursiveName='premium' />
-			<div className='grid grid-cols-6 gap-4 mt-5 mb-12'>
+			<div className='flex flex-wrap justify-center gap-4 mt-5 mb-12'>
 				{brands.map((b) => (
-					<BaseContainer key={b.id} name={b.name} src={b.img} />
+					<BaseContainer key={b.id} name={b.name} src={b.img} width='268px' height='268px' />
 				))}
 			</div>
 
 			{/* Reviews */}
 			<BaseHeader name='Co mówią nasi' cursiveName='klienci' />
-			<div className='grid grid-cols-3 gap-6 mt-5 mb-12'>
+			<div className='flex flex-wrap justify-center gap-6 mt-5 mb-12'>
 				{reviews.map((r) => (
 					<BaseReview
 						key={r.id}
@@ -60,9 +59,9 @@ const HomePage = () => (
 
 			{/* Gadgets */}
 			<BaseHeader name='Gadżety reklamowe' cursiveName='- Na tym znamy się najlepiej' />
-			<div className='flex flex-col space-y-4 mt-5 mb-12'>
+			<div className='flex flex-wrap space-y-4 mt-5 mb-12'>
 				{gadgets.map((g) => (
-					<BaseGadget id={g.id} title={g.title} img={g.img} desc={g.description} />
+					<BaseGadget key={g.id} id={g.id} title={g.title} img={g.img} desc={g.description} />
 				))}
 			</div>
 

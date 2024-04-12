@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* add new font Boska */
 @font-face {
 	font-family: 'Boska';
 	font-style: normal;
@@ -9,4 +10,20 @@
 	font-display: swap;
 	src: url(../../public/fonts/Boska-Variable.ttf) format('truetype');
 	src: url(../../public/fonts/Boska-VariableItalic.ttf) format('truetype');
+}
+
+/* disable autocomplete background color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	border: none !important;
+
+	-webkit-text-fill-color: inherit !important;
+
+	transition: background-color 5000s ease-in-out 0s;
 }

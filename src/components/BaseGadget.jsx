@@ -26,10 +26,10 @@ const BaseGadget = ({title, img, desc}) => {
 		return parts.map((part, index) => {
 			let fontClass = '';
 			if (part.toLowerCase() === 'gadżety' && !hasGadzety) {
-				fontClass = 'font-bold font-boska';
+				fontClass = 'font-extrabold font-boska';
 				hasGadzety = true;
 			} else if (hasGadzety) {
-				fontClass = 'font-bold font-boska';
+				fontClass = 'font-extrabold font-boska';
 				hasGadzety = false;
 			} else {
 				fontClass = 'font-normal';
@@ -44,18 +44,21 @@ const BaseGadget = ({title, img, desc}) => {
 	};
 
 	return (
-		<div className='rounded-3xl bg-[#F4F4F4] p-5 overflow-hidden transition-height duration-300'>
+		<div
+			className='rounded-3xl bg-[#F4F4F4] p-5 overflow-hidden transition-height duration-300
+				sm:space-y-2'
+		>
 			<div
 				className='flex justify-between items-center hover:cursor-pointer'
 				onClick={toggleExpansion}
 			>
-				<div className={`text-[32px] ${!isExpanded && 'text-font'}`}>
+				<div className={`sm:text-[14px] text-[32px] ${!isExpanded && 'text-font'}`}>
 					{renderTitleWithFonts(title)}
 				</div>
 				<img
 					alt='arrow_up'
 					src={arrowCircleUp}
-					className={`w-20 transform transition-transform duration-300 ${
+					className={`sm:w-14 w-20 transform transition-transform duration-300 ${
 						isExpanded ? '' : 'rotate-180'
 					}`}
 				/>
@@ -66,9 +69,16 @@ const BaseGadget = ({title, img, desc}) => {
 				className='overflow-hidden transition-max-height duration-300'
 				style={{maxHeight: isExpanded ? 'auto' : 0}}
 			>
-				<div className='w-full flex justify-between space-x-14'>
-					<img alt={img} src={img} className='w-1/3 max-h-auto rounded-3xl' />
-					<div className='w-2/3 leading-relaxed py-5'>{desc}</div>
+				<div className='sm:flex-col md:flex-col w-full flex justify-between xl:space-x-14'>
+					<img
+						alt={img}
+						src={img}
+						className='bg-contain rounded-3xl lg:w-1/3 xl:w-1/3 h-fit'
+						style={{backgroundImage: 'contain'}}
+					/>
+					<div className='sm:w-full md:w-full lg:w-full w-2/3 h-fit leading-relaxed sm:py-0 md:py-0 py-5 lg:px-5'>
+						{desc}
+					</div>
 				</div>
 			</div>
 		</div>
