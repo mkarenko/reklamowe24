@@ -1,0 +1,101 @@
+Date : 2024-04-12 14:23:05
+Directory : /home/misiek/Repozytorium/reklamowe24
+Total : 58 files,  20290 codes, 208 comments, 261 blanks, all 20759 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          3 |     18,503 |          0 |          3 |     18,506 |
+| JavaScript JSX |         18 |      1,018 |          9 |        136 |      1,163 |
+| CSS            |          2 |        332 |        167 |         78 |        577 |
+| JavaScript     |         15 |        308 |          9 |         30 |        347 |
+| XML            |         18 |         61 |          0 |          0 |         61 |
+| Markdown       |          1 |         51 |          0 |         13 |         64 |
+| HTML           |          1 |         17 |         23 |          1 |         41 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                          | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                             |         58 |     20,290 |        208 |        261 |     20,759 |
+| . (Files)                                                                     |          5 |     18,577 |          2 |         21 |     18,600 |
+| dist                                                                          |          1 |        309 |        165 |         73 |        547 |
+| public                                                                        |          2 |         32 |         23 |          2 |         57 |
+| src                                                                           |         50 |      1,372 |         18 |        165 |      1,555 |
+| src (Files)                                                                   |          5 |         49 |          7 |         15 |         71 |
+| src/assets                                                                    |         18 |         61 |          0 |          0 |         61 |
+| src/assets/brands                                                             |          2 |          2 |          0 |          0 |          2 |
+| src/assets/icons                                                              |         16 |         59 |          0 |          0 |         59 |
+| src/components                                                                |         16 |        939 |          2 |        121 |      1,062 |
+| src/db                                                                        |          7 |        219 |          0 |          7 |        226 |
+| src/pages                                                                     |          2 |         79 |          7 |         15 |        101 |
+| src/theme                                                                     |          1 |         23 |          2 |          5 |         30 |
+| src/utils                                                                     |          1 |          2 |          0 |          2 |          4 |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                      | language       | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| /home/misiek/Repozytorium/reklamowe24/README.md                               | Markdown       |         51 |          0 |         13 |         64 |
+| /home/misiek/Repozytorium/reklamowe24/dist/output.css                         | CSS            |        309 |        165 |         73 |        547 |
+| /home/misiek/Repozytorium/reklamowe24/eslint.config.mjs                       | JavaScript     |         14 |          1 |          4 |         19 |
+| /home/misiek/Repozytorium/reklamowe24/package-lock.json                       | JSON           |     18,430 |          0 |          1 |     18,431 |
+| /home/misiek/Repozytorium/reklamowe24/package.json                            | JSON           |         58 |          0 |          1 |         59 |
+| /home/misiek/Repozytorium/reklamowe24/public/index.html                       | HTML           |         17 |         23 |          1 |         41 |
+| /home/misiek/Repozytorium/reklamowe24/public/manifest.json                    | JSON           |         15 |          0 |          1 |         16 |
+| /home/misiek/Repozytorium/reklamowe24/src/App.js                              | JavaScript     |         13 |          0 |          5 |         18 |
+| /home/misiek/Repozytorium/reklamowe24/src/App.test.js                         | JavaScript     |          7 |          0 |          2 |          9 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/brands/parker.svg            | XML            |          1 |          0 |          0 |          1 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/brands/waterman.svg          | XML            |          1 |          0 |          0 |          1 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/arrow_circle_right.svg | XML            |          3 |          0 |          0 |          3 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/arrow_circle_up.svg    | XML            |          1 |          0 |          0 |          1 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/arrow_next.svg         | XML            |          4 |          0 |          0 |          4 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/arrow_right.svg        | XML            |          3 |          0 |          0 |          3 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/arrow_up.svg           | XML            |          3 |          0 |          0 |          3 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/burger_menu.svg        | XML            |          5 |          0 |          0 |          5 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/mail.svg               | XML            |          4 |          0 |          0 |          4 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_back.svg         | XML            |          5 |          0 |          0 |          5 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_down.svg         | XML            |          5 |          0 |          0 |          5 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_esc.svg          | XML            |          5 |          0 |          0 |          5 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_sparkles.svg     | XML            |          3 |          0 |          0 |          3 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_trending.svg     | XML            |          3 |          0 |          0 |          3 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_up.svg           | XML            |          5 |          0 |          0 |          5 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/phone.svg              | XML            |          3 |          0 |          0 |          3 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/send.svg               | XML            |          4 |          0 |          0 |          4 |
+| /home/misiek/Repozytorium/reklamowe24/src/assets/icons/star.svg               | XML            |          3 |          0 |          0 |          3 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/BaseButton.jsx           | JavaScript JSX |         18 |          0 |          3 |         21 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/BaseCarousel.jsx         | JavaScript JSX |         57 |          1 |          8 |         66 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/BaseContainer.jsx        | JavaScript JSX |         13 |          0 |          3 |         16 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/BaseGadget.jsx           | JavaScript JSX |         77 |          1 |         11 |         89 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/BaseHeader.jsx           | JavaScript JSX |          7 |          0 |          2 |          9 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/BaseReview.jsx           | JavaScript JSX |         26 |          0 |          5 |         31 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/BurgerMenu.jsx           | JavaScript JSX |         35 |          0 |          6 |         41 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/CategoryCarousel.jsx     | JavaScript JSX |         51 |          0 |          8 |         59 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/CategoryModal.jsx        | JavaScript JSX |         21 |          0 |          4 |         25 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/Divider.jsx              | JavaScript JSX |         22 |          0 |          5 |         27 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/Footer.jsx               | JavaScript JSX |        195 |          0 |          9 |        204 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/Header.jsx               | JavaScript JSX |         74 |          0 |          8 |         82 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/ImageCarousel.jsx        | JavaScript JSX |         68 |          0 |          9 |         77 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/NavBar.jsx               | JavaScript JSX |        107 |          0 |         18 |        125 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/ScrollButton.jsx         | JavaScript JSX |         29 |          0 |          8 |         37 |
+| /home/misiek/Repozytorium/reklamowe24/src/components/SearchModal.jsx          | JavaScript JSX |        139 |          0 |         14 |        153 |
+| /home/misiek/Repozytorium/reklamowe24/src/db/brands.js                        | JavaScript     |         14 |          0 |          1 |         15 |
+| /home/misiek/Repozytorium/reklamowe24/src/db/carouselImages.js                | JavaScript     |          5 |          0 |          1 |          6 |
+| /home/misiek/Repozytorium/reklamowe24/src/db/categories.js                    | JavaScript     |         23 |          0 |          1 |         24 |
+| /home/misiek/Repozytorium/reklamowe24/src/db/companies.js                     | JavaScript     |         12 |          0 |          1 |         13 |
+| /home/misiek/Repozytorium/reklamowe24/src/db/gadgets.js                       | JavaScript     |         44 |          0 |          1 |         45 |
+| /home/misiek/Repozytorium/reklamowe24/src/db/offers.js                        | JavaScript     |         49 |          0 |          1 |         50 |
+| /home/misiek/Repozytorium/reklamowe24/src/db/reviews.js                       | JavaScript     |         72 |          0 |          1 |         73 |
+| /home/misiek/Repozytorium/reklamowe24/src/index.js                            | JavaScript     |         16 |          3 |          5 |         24 |
+| /home/misiek/Repozytorium/reklamowe24/src/pages/HomePage.jsx                  | JavaScript JSX |         60 |          7 |         12 |         79 |
+| /home/misiek/Repozytorium/reklamowe24/src/pages/NoContentPage.jsx             | JavaScript JSX |         19 |          0 |          3 |         22 |
+| /home/misiek/Repozytorium/reklamowe24/src/reportWebVitals.js                  | JavaScript     |         12 |          0 |          2 |         14 |
+| /home/misiek/Repozytorium/reklamowe24/src/setupTests.js                       | JavaScript     |          1 |          4 |          1 |          6 |
+| /home/misiek/Repozytorium/reklamowe24/src/theme/tailwind.css                  | CSS            |         23 |          2 |          5 |         30 |
+| /home/misiek/Repozytorium/reklamowe24/src/utils/common.js                     | JavaScript     |          2 |          0 |          2 |          4 |
+| /home/misiek/Repozytorium/reklamowe24/tailwind.config.js                      | JavaScript     |         24 |          1 |          2 |         27 |
+| Total                                                                         |                |     20,290 |        208 |        261 |     20,759 |
++-------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

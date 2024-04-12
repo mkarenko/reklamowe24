@@ -1,0 +1,29 @@
+"filename", "language", "Markdown", "JavaScript", "XML", "CSS", "JavaScript JSX", "comment", "blank", "total"
+"/home/misiek/Repozytorium/reklamowe24/README.md", "Markdown", 30, 0, 0, 0, 0, 0, 7, 37
+"/home/misiek/Repozytorium/reklamowe24/src/assets/icons/arrow_circle_right.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 3
+"/home/misiek/Repozytorium/reklamowe24/src/assets/icons/arrow_right.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 3
+"/home/misiek/Repozytorium/reklamowe24/src/assets/icons/burger_menu.svg", "XML", 0, 0, 5, 0, 0, 0, 0, 5
+"/home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_back.svg", "XML", 0, 0, 5, 0, 0, 0, 0, 5
+"/home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_down.svg", "XML", 0, 0, 5, 0, 0, 0, 0, 5
+"/home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_esc.svg", "XML", 0, 0, 5, 0, 0, 0, 0, 5
+"/home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_sparkles.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 3
+"/home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_trending.svg", "XML", 0, 0, 3, 0, 0, 0, 0, 3
+"/home/misiek/Repozytorium/reklamowe24/src/assets/icons/modal_up.svg", "XML", 0, 0, 5, 0, 0, 0, 0, 5
+"/home/misiek/Repozytorium/reklamowe24/src/components/BaseButton.jsx", "JavaScript JSX", 0, 0, 0, 0, -26, 0, -4, -30
+"/home/misiek/Repozytorium/reklamowe24/src/components/BaseCarousel.jsx", "JavaScript JSX", 0, 0, 0, 0, -4, 1, -1, -4
+"/home/misiek/Repozytorium/reklamowe24/src/components/BaseGadget.jsx", "JavaScript JSX", 0, 0, 0, 0, 10, 0, 0, 10
+"/home/misiek/Repozytorium/reklamowe24/src/components/BurgerMenu.jsx", "JavaScript JSX", 0, 0, 0, 0, 31, 0, 4, 35
+"/home/misiek/Repozytorium/reklamowe24/src/components/CategoryCarousel.jsx", "JavaScript JSX", 0, 0, 0, 0, 6, 0, 3, 9
+"/home/misiek/Repozytorium/reklamowe24/src/components/CategoryModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 21, 0, 4, 25
+"/home/misiek/Repozytorium/reklamowe24/src/components/Divider.jsx", "JavaScript JSX", 0, 0, 0, 0, -2, 0, 0, -2
+"/home/misiek/Repozytorium/reklamowe24/src/components/Footer.jsx", "JavaScript JSX", 0, 0, 0, 0, 5, -1, 0, 4
+"/home/misiek/Repozytorium/reklamowe24/src/components/Header.jsx", "JavaScript JSX", 0, 0, 0, 0, 15, 0, 3, 18
+"/home/misiek/Repozytorium/reklamowe24/src/components/ImageCarousel.jsx", "JavaScript JSX", 0, 0, 0, 0, 13, 0, 1, 14
+"/home/misiek/Repozytorium/reklamowe24/src/components/NavBar.jsx", "JavaScript JSX", 0, 0, 0, 0, 31, 0, 7, 38
+"/home/misiek/Repozytorium/reklamowe24/src/components/SearchModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 139, 0, 14, 153
+"/home/misiek/Repozytorium/reklamowe24/src/pages/HomePage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, -1, -1
+"/home/misiek/Repozytorium/reklamowe24/src/theme/tailwind.css", "CSS", 0, 0, 0, 12, 0, 2, 3, 17
+"/home/misiek/Repozytorium/reklamowe24/src/utils/Navigate.js", "JavaScript", 0, -3, 0, 0, 0, 0, -1, -4
+"/home/misiek/Repozytorium/reklamowe24/src/utils/common.js", "JavaScript", 0, -1, 0, 0, 0, 0, 0, -1
+"/home/misiek/Repozytorium/reklamowe24/tailwind.config.js", "JavaScript", 0, 1, 0, 0, 0, 0, 0, 1
+"Total", "-", 30, -3, 37, 12, 239, 2, 39, 356
