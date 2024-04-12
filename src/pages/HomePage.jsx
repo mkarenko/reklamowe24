@@ -45,7 +45,7 @@ const HomePage = () => (
 
 			{/* Reviews */}
 			<BaseHeader name='Co mówią nasi' cursiveName='klienci' />
-			<div className='flex flex-wrap justify-center gap-6 mt-5 mb-12'>
+			<div className='grid xl:grid-cols-3 lg:grid-cols-3 grid-cols-1 justify-center gap-6 mt-5 mb-12'>
 				{reviews.map((r) => (
 					<BaseReview
 						key={r.id}
