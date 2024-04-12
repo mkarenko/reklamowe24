@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reklamowe24/static/css/main.2b844549.css",
-    "main.js": "/reklamowe24/static/js/main.337c6f5f.js",
+    "main.css": "/reklamowe24/static/css/main.ff6bfcee.css",
+    "main.js": "/reklamowe24/static/js/main.5aca0a91.js",
     "static/js/453.01ebb02d.chunk.js": "/reklamowe24/static/js/453.01ebb02d.chunk.js",
     "static/media/bags.jpeg": "/reklamowe24/static/media/bags.3791e821673f09e18ce0.jpeg",
     "static/media/pens.jpeg": "/reklamowe24/static/media/pens.643672bb1cc3b4dea28c.jpeg",
@@ -42,12 +42,12 @@
     "static/media/arrow_next.svg": "/reklamowe24/static/media/arrow_next.b48559157dd4cbc2d08f54c8108905b0.svg",
     "static/media/modal_trending.svg": "/reklamowe24/static/media/modal_trending.774285624474af528904be813c35e64c.svg",
     "static/media/arrow_right.svg": "/reklamowe24/static/media/arrow_right.e0e94a0b377c345596fe9e309fc6a12b.svg",
-    "main.2b844549.css.map": "/reklamowe24/static/css/main.2b844549.css.map",
-    "main.337c6f5f.js.map": "/reklamowe24/static/js/main.337c6f5f.js.map",
+    "main.ff6bfcee.css.map": "/reklamowe24/static/css/main.ff6bfcee.css.map",
+    "main.5aca0a91.js.map": "/reklamowe24/static/js/main.5aca0a91.js.map",
     "453.01ebb02d.chunk.js.map": "/reklamowe24/static/js/453.01ebb02d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b844549.css",
-    "static/js/main.337c6f5f.js"
+    "static/css/main.ff6bfcee.css",
+    "static/js/main.5aca0a91.js"
   ]
 }
